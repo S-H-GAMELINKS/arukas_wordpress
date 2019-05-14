@@ -1,0 +1,47 @@
+{
+    "data":{
+      "type": "wordpress-db",
+      "attributes": {
+        "name": "mysql"
+      },
+      "relationships": {
+        "services": {
+          "data": [
+            {
+              "lid": "1",
+              "type": "services"
+            }
+          ]
+        }
+      }
+    },
+    "included": [
+      {
+        "lid": "1",
+        "type": "services",
+        "attributes": {
+          "command": "",
+          "custom-domain": "",
+          "image": "mysql:5.7",
+          "instances": 1,
+          "ports": [
+            {
+              "number": "3306",
+              "protocol": "tcp"
+            }
+          ],
+          "environment": [
+          ],
+          "subdomain": ""
+        },
+        "relationships": {
+          "service-plan": {
+            "data": {
+              "type": "service-plans",
+              "id": "jp-tokyo/hobby"
+            }
+          }
+        }
+      }
+    ]
+}
