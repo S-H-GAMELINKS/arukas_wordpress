@@ -2,7 +2,7 @@
     "data":{
       "type": "wordpress-db",
       "attributes": {
-        "name": "mysql"
+        "name": "mariadb"
       },
       "relationships": {
         "services": {
