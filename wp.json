@@ -2,7 +2,7 @@
     "data":{
       "type": "apps",
       "attributes": {
-        "name": "myapp"
+        "name": "wordpress"
       },
       "relationships": {
         "services": {
@@ -31,6 +31,22 @@
             }
           ],
           "environment": [
+            {
+              "key": "WORDPRESS_DB_HOST",
+              "value": ""
+            },
+            {
+              "key": "WORDPRESS_DB_USER",
+              "value": ""
+            },
+            {
+              "key": "WORDPRESS_DB_PASSWORD",
+              "value": ""
+            },
+            {
+              "key": "WORDPRESS_DB_NAME",
+              "value": ""
+            }
           ],
           "subdomain": ""
         },
