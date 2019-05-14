@@ -5,7 +5,7 @@ Dotenv.load
 
 arukas = Arukas::API::new(ENV["ARUKAS_JSON_API_TOKEN"], ENV["ARUKAS_JSON_API_SECRET"])
 
-json = File.read("mariadbre.json")
+json = File.read("mariadb.json")
 arukas.create_apps(json)
 
 json = File.read("wp.json")
